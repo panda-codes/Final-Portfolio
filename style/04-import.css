@@ -6,6 +6,7 @@
 
 header {
   height: 60;
+  padding: 20px;
   position: relative;
   scroll-behavior: smooth;
 }
@@ -22,6 +23,7 @@ header .nav {
   background-color: #fff;
   opacity: 0.9;
   margin-bottom: 30px;
+  z-index: 2;
 }
 header .nav .links {
   display: flex;
@@ -60,5 +62,72 @@ header .summary .text p {
   width: 100%;
 }
 header .summary .textimg {
+  position: relative;
+  top: 25px;
   width: 40%;
+  z-index: 1;
+}
+
+main {
+  color: black;
+  background-color: #010101;
+}
+main #skills {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #skills .skillBox {
+  padding: 70px 90px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 1.1s;
+  transition-timing-function: ease-in-out;
+  border: 2px solid purple;
+}
+main #skills .skillBox:hover {
+  height: 400px;
+  cursor: pointer;
+  background-color: purple;
+  box-shadow: 30px 100px 5px;
+}
+main #skills .skillBox .skillBoxHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 5px;
+}
+main #skills .skillBox .skillBoxBody {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  margin: 0 auto;
+  align-items: start;
+  justify-content: space-between;
+}
+main #skills .skillBox .skillBoxBody .c1 {
+  margin-bottom: 10px;
+}
+main #skills .skillBox .skillBoxBody .c1 .num {
+  margin-right: 3px;
+  position: relative;
+  bottom: 5px;
 }/*# sourceMappingURL=04-import.css.map */
