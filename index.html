@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Panda Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,16 +17,17 @@
     <header>
       <div class="nav">
         <!-- Logo -->
-        <h1>Panda-Codes</h1>
+        <h1>Panda-Codes
+        </h1>
         <!-- Nav Menu -->
         <div class="links">
-            <a href="">Home</a>
-            <a href="#sum">About Me</a>
-            <a href="">Skills</a>
-            <a href="">contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skill">Skills</a>
+            <a href="#contact">contact</a>
         </div>
       </div>
-      <a name="sum"></a>
+      <a name="home"></a>
       <div class="summary">
         <div class="text">
           <h1>I am Dede Omatseye</h1>
@@ -45,6 +47,7 @@
     </header>
     <main>
       <section>
+        <a name="skill"></a>
         <div id="skills">
             <!-- skillbox1 -->
             <div class="skillBox">
@@ -250,26 +253,6 @@
                     Node.js
                   </p>
                 </div>
-                <!-- list item 5 -->
-                <div class="c1" style="display: flex;">
-                    <div class="num"
-                    style="
-                      width: 30px;
-                      height: 28px;
-                      background: black;
-                      color:#fff;
-                      text-align: center;
-                      border-radius: 48%;
-                      padding: 5px;
-                    "
-                  >
-                    05
-                  </div>
-                  <!-- list item 5 txt -->
-                  <p>
-                      HTML5
-                  </p>
-                </div>
             </div>
           </div>
           <!-- skill box-3 -->
@@ -279,7 +262,7 @@
                 <!-- header logo -->
                 <img src="/img/ZdPP.gif" alt="" width="80px" />
                 <!-- header title -->
-                    <h2>Front-End</h2>
+                    <h2>Adept In</h2>
             </div>
             <!-- skillboxbody -->
             <div class="skillBoxBody">
@@ -300,7 +283,7 @@
                   </div>
                   <!-- list item 1 txt -->
                   <p>
-                      HTML5
+                    JavaScript
                   </p>
                 </div>
                 <!-- list item 2 -->
@@ -320,7 +303,7 @@
                   </div>
                   <!-- list item 2 txt -->
                   <p>
-                      HTML5
+                    MongoDB
                   </p>
                 </div>
                 <!-- list item 3 -->
@@ -340,7 +323,7 @@
                   </div>
                   <!-- list item 3 txt -->
                   <p>
-                      HTML5
+                    MySQL
                   </p>
                 </div>
                 <!-- list item 4 -->
@@ -360,7 +343,7 @@
                   </div>
                   <!-- list item 4 txt -->
                   <p>
-                      HTML5
+                    PostgreSQL
                   </p>
                 </div>
                 <!-- list item 5 -->
@@ -380,20 +363,21 @@
                   </div>
                   <!-- list item 5 txt -->
                   <p>
-                      HTML5
+                    Git/GitHub
                   </p>
                 </div>
             </div>
           </div>
         </div>
+        <a name="about"></a>
       </section>
       <!-- educational qualification -->
-      <section>
+      <section class="edqBg">
         <div class="edq">
             <div class="edqimg">
-                <img src="/img/UNIBEN-UNiversity-of-Benin.jpg" alt="">
+                <img src="/img/UNIBEN-UNiversity-of-Benin.jpg" style="width: 80%; border-radius: 2%; border:2px solid purple;" alt="">
             </div>
-            <div class="edqtxt">
+            <div class="edqtxt" style="">
             <h1>EDUCATIONAL QUALIFICATIONS</h1>
             <h2>UNIVERSITY OF BENIN, EDO STATE</h2>
             <p>B.SC(ED) CHEMISTRY		2021</p>
@@ -401,11 +385,11 @@
             <p>FULLSTACK DEVELOPMENT CERTIFICATION	Nov 2023-Ongoing</p>
             </div>
         </div>
-      </section>
+      </section >
       <!-- work experience -->
-      <section>
+      <section class="edqBg">
         <div class="edq">
-            <div class="edqtxt">
+            <div class="edqtxt" style="">
                 <h1>WORK EXPERIENCE</h1>
                 <h2>Illusion Decals (Benin)		March 2021- April 2022</h2>
                 <h3>Management/Intern</h3>
@@ -418,17 +402,17 @@
                 </ul>
             </div>
             <div class="edqimg">
-                <img style="width:200px;" src="/img/WhatsApp Image 2024-03-02 at 12.30.54 AM.jpeg" alt="">
+                <img style="width:80%; border-radius: 2%; border:2px solid purple;" src="/img/WhatsApp Image 2024-03-02 at 12.30.54 AM.jpeg" alt="">
             </div>
           </div>
       </section>
       <!-- Nysc -->
-      <section>
+      <section class="edqBg">
         <div class="edq">
             <div class="edqimg">
-                <img style="width:200px;" src="/img/WhatsApp Image 2024-03-02 at 12.32.29 AM.jpeg" alt="">
+                <img style="width:80%; border-radius: 2%; border:2px solid purple;" src="/img/WhatsApp Image 2024-03-02 at 12.32.29 AM.jpeg" alt="">
             </div>
-            <div class="edqtxt">
+            <div class="edqtxt" >
                 <h2>Command Day Secondary School Ikeja(NYSC)        November 2022-October 2023</h2>
                 <h3>Corper Liaison Officer (CLO)/Class Room Teacher</h3>
                 <h3>Roles</h3>
@@ -442,8 +426,17 @@
       </section>
     </main>
     <footer>
-        <div>
-
+        <div class="fnav">
+            <!-- Logo -->
+            <p>contact</p>
+            <div class="icons">
+                <a href="https://github.com/panda-codes"><i class="fa fa-2x fa-github" aria-hidden="true" ></i></a>
+                <a href="https://x.com/Ken_kun01?t=UuRmdkkOJKHmdTP5YYN66A&s=08"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a> 
+                <a href="dedeomatse@gmail.com"><i class="fa fa-2x fa-google" aria-hidden="true"></i></a>
+            </div>
+            <p>
+                &copy 2024
+            </p>
         </div>
     </footer>
     <script></script>

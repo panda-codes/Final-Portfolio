@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 header {
   height: 60;
   padding: 20px;
@@ -79,9 +81,6 @@ main {
     @include flexContainer1(row, center, space-around);
     padding-top: 30px;
     padding-bottom: 30px;
-    
-   
-
 
     .skillBox {
       padding: 70px 90px;
@@ -93,15 +92,12 @@ main {
       transition-timing-function: ease-in-out;
       border: 2px solid $primaryColor;
 
-      &:hover{
+      &:hover {
         height: 400px;
         cursor: pointer;
         background-color: $primaryColor;
-        
-        box-shadow: 30px 100px 5px;
       }
 
-    
       .skillBoxHeader {
         @include flexContainer1(row, center, space-between);
         text-decoration: underline;
@@ -109,19 +105,84 @@ main {
         margin-bottom: 5px;
       }
 
-      .skillBoxBody{
+      .skillBoxBody {
         @include flexContainer1(column, start, space-between);
-        
-        .c1{
-            margin-bottom: 10px;
 
-            .num{
-                margin-right: 3px;
-                position: relative;
-                bottom: 5px;
-            }
+        .c1 {
+          margin-bottom: 10px;
+
+          .num {
+            margin-right: 3px;
+            position: relative;
+            bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .edqBg {
+    color: $tertColor;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    &:nth-child(2) {
+      background-color: darken($color: $nxtColor, $amount: 45%);
+    }
+    &:nth-child(3) {
+      background-color: darken($color: $nxtColor, $amount: 45%);
+    }
+
+    .edq {
+      @include flexContainer1(row, center, space-around);
+
+      .edqimg {
+        width: 50%;
+      }
+
+      .edqtxt {
+        width: 50%;
+        @include flexContainer1(column, start, space-between);
+        h1,
+        h2,
+        h3,
+        ul {
+          width: 100%;
+        }
+        h1{
+            text-decoration: underline;
         }
       }
     }
   }
 }
+
+footer{
+    
+      // footer nav
+  .fnav {
+    @include flexContainer1(column, center, center);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #fff;
+    opacity: 0.9;
+    color: lighten($color: $secondaryColor, $amount: 30%);
+    font-size: 15px;
+    font-weight: bold;
+
+   i{
+    margin-top: 8px;
+    margin-bottom:8px ;
+    margin-left: 10px;
+    color: lighten($color: $secondaryColor, $amount: 30%);
+
+    &:hover{
+        color: $primaryColor;
+    }
+   }
+   a{
+    text-decoration: none;
+   }
+  }
+}
+
