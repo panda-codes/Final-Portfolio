@@ -1,12 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body span {
+  color: #fff;
+}
+
 header {
   height: 60;
-  padding: 20px;
+  width: 100%;
   position: relative;
   scroll-behavior: smooth;
 }
@@ -20,10 +28,19 @@ header .nav {
   justify-content: space-between;
   position: fixed;
   top: 0px;
+  left: 0px;
+  padding: 15px;
   background-color: #fff;
   opacity: 0.9;
   margin-bottom: 30px;
   z-index: 2;
+}
+header .nav h1 {
+  background-color: purple;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 22px;
+  border: none;
 }
 header .nav .links {
   display: flex;
@@ -47,6 +64,7 @@ header .nav .links a:hover {
 }
 header .summary {
   width: 70%;
+  font-size: 18px;
   display: flex;
   flex-direction: row;
   padding: 0 30px;
@@ -63,7 +81,7 @@ header .summary .text p {
 }
 header .summary .textimg {
   position: relative;
-  top: 25px;
+  top: 7px;
   width: 40%;
   z-index: 1;
 }
@@ -80,8 +98,8 @@ main #skills {
   margin: 0 auto;
   align-items: center;
   justify-content: space-around;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 main #skills .skillBox {
   padding: 70px 90px;
@@ -197,4 +215,342 @@ footer .fnav i:hover {
 }
 footer .fnav a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 60;
+    padding: 20px;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  header .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    z-index: 2;
+  }
+  header .nav h1 {
+    background-color: purple;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: none;
+  }
+  header .nav .links {
+    display: flex;
+    width: 50%;
+  }
+  header .nav .links a {
+    padding-right: 2px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    width: 40%;
+  }
+  header .nav .links a:hover {
+    background-color: purple;
+    color: #fff;
+  }
+  header .summary {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  header .summary::before {
+    content: " ";
+    height: 100px;
+    width: 100%;
+  }
+  header .summary .text {
+    width: 100%;
+    text-align: center;
+  }
+  header .summary .text p {
+    width: 100%;
+  }
+  header .summary .textimg {
+    position: relative;
+    right: 45px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+  main {
+    color: black;
+    background-color: #010101;
+  }
+  main #skills {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main #skills .skillBox {
+    padding: 70px 90px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-in-out;
+    border: 2px solid purple;
+  }
+  main #skills .skillBox:hover {
+    height: 400px;
+    cursor: pointer;
+    background-color: purple;
+  }
+  main #skills .skillBox .skillBoxHeader {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  main #skills .skillBox .skillBoxBody {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: start;
+    justify-content: space-between;
+  }
+  main #skills .skillBox .skillBoxBody .c1 {
+    margin-bottom: 10px;
+  }
+  main #skills .skillBox .skillBoxBody .c1 .num {
+    margin-right: 3px;
+    position: relative;
+    bottom: 5px;
+  }
+  main .edqBg {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  main .edqBg:nth-child(2) {
+    background-color: #0d0d0d;
+  }
+  main .edqBg:nth-child(3) {
+    background-color: #0d0d0d;
+  }
+  main .edqBg .edq {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .edqBg .edq .edqimg {
+    width: 50%;
+  }
+  main .edqBg .edq .edqtxt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: start;
+    justify-content: space-between;
+  }
+  main .edqBg .edq .edqtxt h1,
+  main .edqBg .edq .edqtxt h2,
+  main .edqBg .edq .edqtxt h3,
+  main .edqBg .edq .edqtxt ul {
+    width: 100%;
+  }
+  main .edqBg .edq .edqtxt h1 {
+    text-decoration: underline;
+  }
+  footer .fnav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #fff;
+    opacity: 0.9;
+    color: #4d4d4d;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  footer .fnav i {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    color: #4d4d4d;
+  }
+  footer .fnav i:hover {
+    color: purple;
+  }
+  footer .fnav a {
+    text-decoration: none;
+  }
+  main {
+    color: black;
+    background-color: #010101;
+  }
+  main #skills {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main #skills .skillBox {
+    padding: 70px 90px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-in-out;
+    border: 2px solid purple;
+    margin-bottom: 10px;
+  }
+  main #skills .skillBox:hover {
+    height: 400px;
+    cursor: pointer;
+    background-color: purple;
+  }
+  main #skills .skillBox .skillBoxHeader {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  main #skills .skillBox .skillBoxBody {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: start;
+    justify-content: space-between;
+  }
+  main #skills .skillBox .skillBoxBody .c1 {
+    margin-bottom: 10px;
+  }
+  main #skills .skillBox .skillBoxBody .c1 .num {
+    margin-right: 3px;
+    position: relative;
+    bottom: 5px;
+  }
+  main .edqBg {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  main .edqBg:nth-child(2) {
+    background-color: #0d0d0d;
+  }
+  main .edqBg:nth-child(3) {
+    background-color: #0d0d0d;
+  }
+  main .edqBg .edq {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .edqBg .edq .edqimg {
+    width: 50%;
+  }
+  main .edqBg .edq .edqtxt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: start;
+    justify-content: space-between;
+  }
+  main .edqBg .edq .edqtxt h1,
+  main .edqBg .edq .edqtxt h2,
+  main .edqBg .edq .edqtxt h3,
+  main .edqBg .edq .edqtxt ul {
+    width: 100%;
+  }
+  main .edqBg .edq .edqtxt h1 {
+    text-decoration: underline;
+  }
+  footer .fnav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #fff;
+    opacity: 0.9;
+    color: #4d4d4d;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  footer .fnav i {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    color: #4d4d4d;
+  }
+  footer .fnav i:hover {
+    color: purple;
+  }
+  footer .fnav a {
+    text-decoration: none;
+  }
 }/*# sourceMappingURL=04-import.css.map */
