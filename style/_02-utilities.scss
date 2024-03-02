@@ -1,0 +1,13 @@
+@mixin flexContainer1($direction,$ai,$jc){
+    display: flex;
+    flex-direction: $direction;
+    padding: 0 30px;
+    margin: 0 auto;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin container1{
+    padding: 0 30px;
+    margin: 0 auto;
+}
